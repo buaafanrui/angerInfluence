@@ -9,7 +9,9 @@ def cal_distances(graph, weight_threshold, max_distance=1):
         os.mkdir('distances')
     distance_files = {}
     for distance in range(1, max_distance + 1):
-        distance_files[distance] = open(('distances/threshold=%d_distance=%d.txt' % (weight_threshold, distance)), 'w')
+        # 计算结果输出到以下文件中
+        distance_output_file_name = 'distances/threshold=%d_distance=%d.txt' % (weight_threshold, distance)
+        distance_files[distance] = open(distance_output_file_name, 'w')
     for uid in graph:
         closer_uid_set = set()
         last_uid_set = set([uid])
