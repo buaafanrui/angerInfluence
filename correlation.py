@@ -1,4 +1,11 @@
 # coding:utf-8
+"""
+计算用户情绪相关性
+输入：用户网络和用户情绪分布（10_graph.txt）；不同距离下的用户对（distances目录下的一系列文件）
+输出：皮尔逊相关系数和斯皮尔曼等级相关系数结果（results/Pearson.txt和results/Spearman.txt）
+"""
+
+
 import numpy as np
 import scipy.stats as scistat
 from read_graph import read_users_mood

@@ -1,4 +1,10 @@
 # coding: utf-8
+"""
+计算节点度和情绪相关性的关系
+输入：用户情绪分布（10_graph.txt）；节点度计算结果（node_properties.txt）
+输出：不同节点度下的情绪相关性结果（results/degree_correlation.txt）
+"""
+
 import numpy as np
 from correlation import get_simi
 import matplotlib.pyplot as plt

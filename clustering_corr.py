@@ -1,4 +1,10 @@
 # coding: utf-8
+"""
+计算聚集系数和情绪相关性的关系
+输入：用户情绪分布（10_graph.txt）；节点聚集系数计算结果（node_properties.txt）
+输出：不同聚集系数下的情绪相关性结果（results/clustering_correlation.txt）
+"""
+
 import numpy as np
 from correlation import get_simi
 import matplotlib.pyplot as plt

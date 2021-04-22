@@ -1,4 +1,9 @@
 # coding:utf-8
+"""
+计算边权重和情绪相关性的关系
+输入：用户网络和情绪分布（10_graph.txt）；不同距离下的用户对（distances目录下的一系列文件）
+输出：不同边权重下的皮尔逊相关系数（results/weight_pearson_mood=*）
+"""
 import numpy as np
 from read_graph import read_users_mood
 from correlation import get_simi

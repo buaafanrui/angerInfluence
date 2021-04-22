@@ -1,4 +1,10 @@
 # coding: utf-8
+"""
+计算随机打散后的情绪相关性
+输入：为用户网络和情绪分布（10_graph.txt）；不同距离下的用户对（distances目录下的一系列文件）
+输出：随机打散后的皮尔逊相关系数和斯皮尔曼等级相关系数（results/random_Pearson和results/random_Spearman.txt）
+"""
+
 from read_graph import read_users_mood
 import scipy.stats as scistat
 import numpy as np

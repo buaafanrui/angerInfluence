@@ -1,4 +1,9 @@
 # coding: utf-8
+"""
+计算网络中的节点度和聚集系数
+输入：用户网络（10_graph.txt）
+输出：节点度和聚集系数计算结果（results/node_properties.txt）
+"""
 from read_graph import read_users_mood
 import networkx as nx
 

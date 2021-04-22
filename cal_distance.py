@@ -1,4 +1,10 @@
 # coding: utf-8
+"""
+计算距离为h的用户对
+输入：用户网络（10_graph.txt）
+输出：不同距离的用户对列表（distances目录下的一系列文件）
+"""
+
 import os
 
 from read_graph import read_graph, read_users_mood
